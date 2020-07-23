@@ -5,6 +5,9 @@
 $green: hsl(163, 72%, 41%);
 $red: hsl(356, 69%, 56%);
 
+$switch-left:hsl(210, 78%, 56%);
+$switch-right:hsl(146, 68%, 55%);
+
 // DARK THEME
 $dark-blue: hsl(230, 17%, 14%);
 $top-dark-blue: hsl(232, 19%, 15%);
@@ -23,7 +26,17 @@ $pale-blue: hsl(225, 100%, 98%);
 $grayish-blue: hsl(227, 47%, 96%);
 $dark-grayish-blue: hsl(228, 12%, 44%);
 
+.title{
+    font-size: 2em;
+}
+
+.subtitle{
+    margin-top: 14px;
+    font-size: 1em;
+}
+
 .card {
+    cursor: pointer;
     padding: 1.8em 0;
     border: none;
     background-color: $dark-desatured-blue;
@@ -33,6 +46,12 @@ $dark-grayish-blue: hsl(228, 12%, 44%);
     flex-direction: column;
     border-radius: 5px;
     position: relative;
+    transition: 800ms;
+
+    &:hover{
+        transition: 800ms;
+        background-color: $dark-grayish-blue;
+    }
     &::before {
         content: "";
         height: 6px;
@@ -122,3 +141,4 @@ $dark-grayish-blue: hsl(228, 12%, 44%);
         color: $youtube;
     }
 }
+
