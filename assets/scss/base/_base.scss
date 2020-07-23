@@ -1,0 +1,26 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+}
+
+body{
+    background-color: $dark-blue;
+}
+
+a,
+a:active,
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
